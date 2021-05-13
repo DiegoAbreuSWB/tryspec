@@ -3,10 +3,18 @@ import argparse as aP
 import numpy as np
 import time
 
-
+#analysis
+#backdoor
+#dos
+#exploit
+#fuzz
+#gene
+#recon
+#shell
+#worm
 def ArgumenParser():
     parser = aP.ArgumentParser(description='Parse the Command line arguments')
-    parser.add_argument('-f', action="store", dest="DataSet", default='recon.csv')
+    parser.add_argument('-f', action="store", dest="DataSet", default='dos.csv')
     parser.add_argument('-k', action="store", dest="neighbour_size", type=int, default=16)
     parser.add_argument('-t', action="store", dest="t_param", type=int, default=2)
     return parser.parse_args()
